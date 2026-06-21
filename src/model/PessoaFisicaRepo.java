@@ -40,7 +40,9 @@ public class PessoaFisicaRepo {
     public ArrayList<PessoaFisica> obterTodos() {
         return pessoas;
     }
-
+    public int quantidade() {
+        return pessoas.size();
+    }
     public void persistir(String arquivo) throws Exception {
         ObjectOutputStream out =
                 new ObjectOutputStream(
